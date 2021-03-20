@@ -1,0 +1,60 @@
+.todo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: rgb(255, 255, 255);
+	padding: 0.5rem;
+	border-radius: 0.7rem;
+	margin: 0.4rem 0;
+	box-shadow: rgba(43, 43, 49, 0.164) 0 5px 2px;
+	transition: box-shadow 0.3s;
+	max-width: 300px;
+}
+
+.todo .delete-container {
+	display: flex;
+	justify-content: center;
+	color: black;
+	width: 40px;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.todo .body {
+	flex: 2;
+}
+
+.todo .text {
+	word-wrap: break-word;
+	color: black;
+	font-weight: 500;
+	max-width: 200px;
+	font-size: 18px;
+}
+
+.todo span {
+	color: black;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+.todo:nth-child(2n + 1) {
+	background: rgb(255, 255, 255);
+}
+
+.todo:hover {
+	box-shadow: rgba(17, 17, 19, 0.603) 0 10px 15px;
+}
+
+.todo .delete-btn {
+	transition: all .2s;
+	cursor: pointer;
+}
+
+.todo .delete-btn:hover {
+	transform: scale(1.1);
+}
+
+.todo .delete-btn:active {
+	transform: scale(0.9);
+}
